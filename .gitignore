@@ -10,7 +10,7 @@ venv/
 .venv/
 env/
 .env/
-
+.vscode
 # ... other sections
 # Dependency files (Optional - only if you install packages outside of venv)
 *.egg
