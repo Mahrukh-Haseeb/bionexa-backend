@@ -1,0 +1,152 @@
+[
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Moderna",
+    "why": "Known for pioneering mRNA-based vaccine technology."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "BioNTech",
+    "why": "Partnered with Pfizer to develop mRNA vaccines for infectious diseases."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "CureVac",
+    "why": "One of the earliest companies to explore mRNA vaccine technology."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "Nature Biotechnology",
+    "why": "Represents global publishing impact in biotech research."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "Science",
+    "why": "Publishes high-impact biotechnology and life sciences research."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "Cell",
+    "why": "Features cutting-edge findings in molecular and cell biology."
+  },
+  {
+    "category": "Research Institute",
+    "name": "Salk Institute",
+    "why": "Leads in foundational biological and neurological studies."
+  },
+  {
+    "category": "Research Institute",
+    "name": "MIT Whitehead Institute",
+    "why": "A leader in biomedical research and genomics innovation."
+  },
+  {
+    "category": "Research Institute",
+    "name": "Francis Crick Institute",
+    "why": "Pioneering UK research institute in molecular biology and genetics."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "CRISPR Therapeutics",
+    "why": "Front-runner in CRISPR-based genomic editing therapies."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "Editas Medicine",
+    "why": "Develops gene-editing technologies for inherited diseases."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "Intellia Therapeutics",
+    "why": "Focuses on in vivo CRISPR therapies for genetic disorders."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Genentech",
+    "why": "Biotech commercialization leader with focus on oncology and immunology."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Amgen",
+    "why": "Major biotechnology company focusing on therapeutic innovations."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Regeneron",
+    "why": "Known for monoclonal antibody research and gene therapy development."
+  },
+  {
+    "category": "Artificial Intelligence in Biotech",
+    "name": "DeepMind",
+    "why": "Pioneered AlphaFold for protein structure prediction."
+  },
+  {
+    "category": "Artificial Intelligence in Biotech",
+    "name": "Insilico Medicine",
+    "why": "Uses generative AI for drug discovery and development."
+  },
+  {
+    "category": "Artificial Intelligence in Biotech",
+    "name": "BenevolentAI",
+    "why": "Combines AI and biomedical data for target discovery."
+  },
+  {
+    "category": "Biopharmaceutical",
+    "name": "Pfizer",
+    "why": "Major pharmaceutical company collaborating on mRNA vaccine tech."
+  },
+  {
+    "category": "Biopharmaceutical",
+    "name": "Novartis",
+    "why": "Global pharma leader integrating AI in clinical research."
+  },
+  {
+    "category": "Biopharmaceutical",
+    "name": "AstraZeneca",
+    "why": "Develops biologics and AI-assisted vaccine platforms."
+  },
+  {
+    "category": "Genomics Research",
+    "name": "Broad Institute",
+    "why": "Leading genomics and biomedical data research institute."
+  },
+  {
+    "category": "Genomics Research",
+    "name": "Wellcome Sanger Institute",
+    "why": "Pioneered large-scale genome sequencing initiatives."
+  },
+  {
+    "category": "Genomics Research",
+    "name": "J. Craig Venter Institute",
+    "why": "Known for synthetic genomics and human genome sequencing."
+  },
+  {
+    "category": "Biotech Startup",
+    "name": "Insitro",
+    "why": "Integrates machine learning and biology for drug discovery."
+  },
+  {
+    "category": "Biotech Startup",
+    "name": "Arzeda",
+    "why": "Computational protein design company using AI and biochemistry."
+  },
+  {
+    "category": "Biotech Startup",
+    "name": "Ginkgo Bioworks",
+    "why": "Specializes in synthetic biology and cell programming."
+  },
+  {
+    "category": "Healthcare AI",
+    "name": "Recursion Pharmaceuticals",
+    "why": "Uses AI and automation for large-scale drug discovery."
+  },
+  {
+    "category": "Healthcare AI",
+    "name": "Tempus",
+    "why": "Applies AI to precision medicine and clinical data analytics."
+  },
+  {
+    "category": "Healthcare AI",
+    "name": "PathAI",
+    "why": "AI diagnostics company focusing on pathology and disease detection."
+  }
+]

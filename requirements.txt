@@ -1,0 +1,9 @@
+# requirements.txt
+groq
+fastapi
+uvicorn
+python-dotenv
+pydantic
+requests
+pandas
+google-generativeai
