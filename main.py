@@ -180,3 +180,8 @@ async def analyze_citation(request: QueryRequest):
         results.append(gemini_result)
 
     return {"models_tested": GROQ_MODELS + ["gemini-1.5-flash"], "results": results}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+
