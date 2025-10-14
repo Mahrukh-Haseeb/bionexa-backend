@@ -20,18 +20,18 @@ try:
         client = Groq()
         print("Groq client initialized.")
     else:
-        print("⚠️ Warning: GROQ_API_KEY not found.")
+        print("Warning: GROQ_API_KEY not found.")
 except Exception as e:
-    print(f"❌ Error initializing Groq client: {e}")
+    print(f"Error initializing Groq client: {e}")
 
 try:
     if os.getenv("GEMINI_API_KEY"):
         genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
         print("Gemini API initialized.")
     else:
-        print("⚠️ GEMINI_API_KEY not found.")
+        print("GEMINI_API_KEY not found.")
 except Exception as e:
-    print(f"❌ Gemini init failed: {e}")
+    print(f"Gemini init failed: {e}")
 
 
 def load_organizations(file_path: str = "organizations.json") -> List[Dict[str, str]]:
@@ -46,7 +46,7 @@ def load_organizations(file_path: str = "organizations.json") -> List[Dict[str, 
                 raise ValueError("organizations.json must be a list of dicts.")
             return data
     except Exception as e:
-        print(f"❌ Failed to load organizations.json: {e}")
+        print(f"Failed to load organizations.json: {e}")
         return []
 
 ORGANIZATIONS = load_organizations()
@@ -161,7 +161,7 @@ def check_ai_citation_gemini(prompt: str) -> str:
         )
         return response.text.strip() if response and response.text else ""
     except Exception as e:
-        print(f"❌ Gemini API failed: {e}")
+        print(f"Gemini API failed: {e}")
         return ""
 
 
