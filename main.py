@@ -8,7 +8,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 import google.generativeai as genai
-from difflib import SequenceMatcher
 
 # ================= Environment Setup =====================
 load_dotenv()
@@ -29,13 +28,12 @@ try:
         genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
         print("Gemini API initialized.")
     else:
-        print("GEMINI_API_KEY not found.")
+        print(" GEMINI_API_KEY not found.")
 except Exception as e:
     print(f"Gemini init failed: {e}")
 
-
+# ================= Load Organizations ====================
 def load_organizations(file_path: str = "organizations.json") -> List[Dict[str, str]]:
-    """Load biotech organizations list."""
     try:
         if not os.path.exists(file_path):
             print(f"{file_path} not found — returning empty list.")
@@ -52,45 +50,14 @@ def load_organizations(file_path: str = "organizations.json") -> List[Dict[str, 
 ORGANIZATIONS = load_organizations()
 TARGET_NAMES = [org["name"] for org in ORGANIZATIONS]
 
-
+# ================= Constants =============================
 GROQ_MODELS = ["llama-3.3-70b-versatile"]
 
-
+# ================= Request Schema ========================
 class QueryRequest(BaseModel):
     prompt: str
 
-
-def merge_model_insights(groq_text: str, gemini_text: str) -> str:
-    """
-    Merge and clean Groq + Gemini outputs into a unified, de-duplicated summary.
-    Produces a polished, human-like biotech insight.
-    """
-    if not groq_text and not gemini_text:
-        return "No insights were generated for this query."
-
-    groq_text = groq_text.strip().replace("\n", " ")
-    gemini_text = gemini_text.strip().replace("\n", " ")
-
-    def split_sentences(text):
-        return [s.strip() for s in re.split(r'(?<=[.!?]) +', text) if s.strip()]
-
-    groq_sents = split_sentences(groq_text)
-    gemini_sents = split_sentences(gemini_text)
-
-    merged_sents = []
-    for sent in groq_sents + gemini_sents:
-        if not any(SequenceMatcher(None, sent.lower(), s.lower()).ratio() > 0.8 for s in merged_sents):
-            merged_sents.append(sent)
-
-    merged_text = " ".join(merged_sents)
-    if groq_text and gemini_text:
-        merged_text += " Together, these perspectives suggest a strong convergence between AI-driven insights and real-world biotech research trends."
-
-    merged_text = re.sub(r"\s+", " ", merged_text).strip()
-    merged_text = merged_text[0].upper() + merged_text[1:] if merged_text else merged_text
-
-    return merged_text
-
+# ================= Core Functions ========================
 def check_ai_citation(prompt: str, model: str) -> Dict[str, Any]:
     """Analyze biotech org mentions using Groq."""
     if not client:
@@ -141,14 +108,16 @@ def check_ai_citation(prompt: str, model: str) -> Dict[str, Any]:
 
     return {
         "prompt_tested": prompt,
+        "llm_model": model,
         "ai_response": ai_response,
         "total_mentions": total_citations,
         "citation_breakdown": citation_results,
         "visibility_score": visibility_score,
     }
 
-def check_ai_citation_gemini(prompt: str) -> str:
-    """Run Gemini analysis and return only the text response."""
+
+def check_ai_citation_gemini(prompt: str) -> Dict[str, Any]:
+    """Fallback analysis using Google Gemini."""
     try:
         model = genai.GenerativeModel("gemini-1.5-flash")
         response = model.generate_content(
@@ -156,22 +125,29 @@ def check_ai_citation_gemini(prompt: str) -> str:
             You are a biotech visibility and citation intelligence expert.
             Identify specific organizations, research institutes, biotech startups,
             or journals related to this topic. Be concise and factual.
+            
             Query: {prompt}
             """
         )
-        return response.text.strip() if response and response.text else ""
+        ai_response = response.text.strip() if response and response.text else ""
     except Exception as e:
-        print(f"Gemini API failed: {e}")
-        return ""
+        raise HTTPException(status_code=500, detail=f"Gemini API failed: {str(e)}")
 
+    return {
+        "ai_response": ai_response,
+        "citation_breakdown": {},
+        "total_mentions": 0,
+        "llm_model": "gemini-1.5-flash",
+    }
 
+# ================= FastAPI Setup =========================
 app = FastAPI(
     title="BioNexa Backend API",
     description="Backend API for BioNexa — AI-driven biotech visibility analysis.",
     version="1.0.0",
 )
 
-
+# ================= CORS Setup ============================
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  
@@ -180,7 +156,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+# ================= Routes ================================
 
 @app.get("/")
 def root():
@@ -192,22 +168,15 @@ def get_organizations():
 
 @app.post("/analyze_citation/")
 async def analyze_citation(request: QueryRequest):
-    """Run both Groq and Gemini models and return merged, de-duplicated insights."""
+    """Main route to analyze biotech mentions using Groq + Gemini fallback."""
+    results = []
     try:
-    
-        groq_result = check_ai_citation(request.prompt, GROQ_MODELS[0])
-        groq_text = groq_result["ai_response"]
-
-     
-        gemini_text = check_ai_citation_gemini(request.prompt)
-
-     
-        merged_text = merge_model_insights(groq_text, gemini_text)
-
-     
-        groq_result["ai_response"] = merged_text 
-
-        return {"results": [groq_result]}
-
+        for model in GROQ_MODELS:
+            model_result = check_ai_citation(request.prompt, model)
+            results.append(model_result)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
+        print(f"Groq failed, using Gemini fallback: {e}")
+        gemini_result = check_ai_citation_gemini(request.prompt)
+        results.append(gemini_result)
+
+    return {"models_tested": GROQ_MODELS + ["gemini-1.5-flash"], "results": results}
