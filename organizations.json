@@ -2,87 +2,267 @@
   {
     "category": "Vaccine / mRNA",
     "name": "Moderna",
-    "why": "Known for pioneering mRNA-based vaccine technology."
+    "why": "Pioneered mRNA-based vaccine technology with the COVID-19 vaccine."
   },
   {
     "category": "Vaccine / mRNA",
     "name": "BioNTech",
-    "why": "Partnered with Pfizer to develop mRNA vaccines for infectious diseases."
+    "why": "Partnered with Pfizer for mRNA vaccine development."
   },
   {
     "category": "Vaccine / mRNA",
     "name": "CureVac",
-    "why": "One of the earliest companies to explore mRNA vaccine technology."
+    "why": "Early innovator in mRNA vaccine research."
   },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Arcturus Therapeutics",
+    "why": "Develops self-amplifying mRNA vaccines and therapeutics."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Translate Bio",
+    "why": "Acquired by Sanofi; focused on mRNA therapeutics."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Pfizer",
+    "why": "Collaborated with BioNTech on global mRNA vaccine rollout."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Gennova Biopharmaceuticals",
+    "why": "Indian biotech developing indigenous mRNA vaccines."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Sanofi",
+    "why": "Investing heavily in mRNA vaccine platforms post-COVID."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Modis Therapeutics",
+    "why": "Focuses on RNA-based rare disease therapeutics."
+  },
+  {
+    "category": "Vaccine / mRNA",
+    "name": "Arcturus Therapeutics",
+    "why": "Developing LUNAR mRNA vaccine delivery technology."
+  },
+
   {
     "category": "Academic Journal",
     "name": "Nature Biotechnology",
-    "why": "Represents global publishing impact in biotech research."
+    "why": "Publishes high-impact biotech research and innovations."
   },
   {
     "category": "Academic Journal",
     "name": "Science",
-    "why": "Publishes high-impact biotechnology and life sciences research."
+    "why": "Covers interdisciplinary biotechnology and life sciences."
   },
   {
     "category": "Academic Journal",
     "name": "Cell",
-    "why": "Features cutting-edge findings in molecular and cell biology."
+    "why": "Publishes cutting-edge molecular biology studies."
   },
+  {
+    "category": "Academic Journal",
+    "name": "Nature Medicine",
+    "why": "Focuses on translational and clinical biomedical research."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "The Lancet",
+    "why": "One of the world’s oldest and most respected medical journals."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "Nature Genetics",
+    "why": "Publishes advances in genomics and genetic engineering."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "Science Translational Medicine",
+    "why": "Bridges basic science and clinical application."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "Nature Reviews Drug Discovery",
+    "why": "Covers trends in drug discovery and biotechnology."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "PNAS",
+    "why": "Publishes high-impact multidisciplinary science research."
+  },
+  {
+    "category": "Academic Journal",
+    "name": "Nature Communications",
+    "why": "Covers open-access research across all sciences."
+  },
+
   {
     "category": "Research Institute",
     "name": "Salk Institute",
-    "why": "Leads in foundational biological and neurological studies."
+    "why": "Pioneers fundamental biological and neurological research."
   },
   {
     "category": "Research Institute",
     "name": "MIT Whitehead Institute",
-    "why": "A leader in biomedical research and genomics innovation."
+    "why": "Leader in biomedical and genomics research."
   },
   {
     "category": "Research Institute",
     "name": "Francis Crick Institute",
-    "why": "Pioneering UK research institute in molecular biology and genetics."
+    "why": "Leading UK molecular biology research center."
   },
+  {
+    "category": "Research Institute",
+    "name": "Broad Institute",
+    "why": "World leader in genomics and computational biology."
+  },
+  {
+    "category": "Research Institute",
+    "name": "Cold Spring Harbor Laboratory",
+    "why": "Renowned for genetics, neuroscience, and quantitative biology."
+  },
+  {
+    "category": "Research Institute",
+    "name": "Max Planck Institute for Molecular Genetics",
+    "why": "Conducts pioneering molecular and cellular research."
+  },
+  {
+    "category": "Research Institute",
+    "name": "Allen Institute for Brain Science",
+    "why": "Advances open-science neuroscience research."
+  },
+  {
+    "category": "Research Institute",
+    "name": "Riken Institute",
+    "why": "Japan’s leading life science and technology research organization."
+  },
+  {
+    "category": "Research Institute",
+    "name": "National Institutes of Health (NIH)",
+    "why": "Primary U.S. medical research agency supporting global health innovation."
+  },
+  {
+    "category": "Research Institute",
+    "name": "EMBL (European Molecular Biology Laboratory)",
+    "why": "Major European hub for life science research."
+  },
+
   {
     "category": "Gene Editing",
     "name": "CRISPR Therapeutics",
-    "why": "Front-runner in CRISPR-based genomic editing therapies."
+    "why": "Front-runner in CRISPR-based gene therapy development."
   },
   {
     "category": "Gene Editing",
     "name": "Editas Medicine",
-    "why": "Develops gene-editing technologies for inherited diseases."
+    "why": "Develops CRISPR and gene-editing therapies for genetic disorders."
   },
   {
     "category": "Gene Editing",
     "name": "Intellia Therapeutics",
-    "why": "Focuses on in vivo CRISPR therapies for genetic disorders."
+    "why": "Focuses on in vivo CRISPR therapies."
   },
+  {
+    "category": "Gene Editing",
+    "name": "Beam Therapeutics",
+    "why": "Pioneering base editing technologies for precise gene correction."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "Prime Medicine",
+    "why": "Advances Prime Editing for precision DNA repair."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "Scribe Therapeutics",
+    "why": "Develops CRISPR-based molecular tools with higher accuracy."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "Caribou Biosciences",
+    "why": "Founded by CRISPR co-inventor Jennifer Doudna."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "Verve Therapeutics",
+    "why": "Applies base editing for cardiovascular diseases."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "Tessera Therapeutics",
+    "why": "Develops genome writing technologies beyond CRISPR."
+  },
+  {
+    "category": "Gene Editing",
+    "name": "eGenesis Bio",
+    "why": "Uses gene editing for xenotransplantation research."
+  },
+
   {
     "category": "Pharma / Biotech Industry",
     "name": "Genentech",
-    "why": "Biotech commercialization leader with focus on oncology and immunology."
+    "why": "Biotech pioneer focusing on oncology and immunology."
   },
   {
     "category": "Pharma / Biotech Industry",
     "name": "Amgen",
-    "why": "Major biotechnology company focusing on therapeutic innovations."
+    "why": "Global leader in biotechnology innovation."
   },
   {
     "category": "Pharma / Biotech Industry",
     "name": "Regeneron",
-    "why": "Known for monoclonal antibody research and gene therapy development."
+    "why": "Known for antibody-based therapeutics and genetic research."
   },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Roche",
+    "why": "Integrates biotechnology with diagnostics and pharmaceuticals."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Johnson & Johnson",
+    "why": "Major healthcare and biotechnology conglomerate."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Eli Lilly",
+    "why": "Develops biologics and RNA-based therapeutics."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Takeda Pharmaceutical",
+    "why": "Japan’s largest biopharma company with global reach."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Gilead Sciences",
+    "why": "Known for antiviral and gene therapy R&D."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Bristol Myers Squibb",
+    "why": "Advances in immuno-oncology and cell therapy."
+  },
+  {
+    "category": "Pharma / Biotech Industry",
+    "name": "Novo Nordisk",
+    "why": "Leading biotech in metabolic and endocrine research."
+  },
+
   {
     "category": "Artificial Intelligence in Biotech",
     "name": "DeepMind",
-    "why": "Pioneered AlphaFold for protein structure prediction."
+    "why": "Developed AlphaFold for protein structure prediction."
   },
   {
     "category": "Artificial Intelligence in Biotech",
     "name": "Insilico Medicine",
-    "why": "Uses generative AI for drug discovery and development."
+    "why": "Uses generative AI for drug discovery."
   },
   {
     "category": "Artificial Intelligence in Biotech",
@@ -90,63 +270,38 @@
     "why": "Combines AI and biomedical data for target discovery."
   },
   {
-    "category": "Biopharmaceutical",
-    "name": "Pfizer",
-    "why": "Major pharmaceutical company collaborating on mRNA vaccine tech."
-  },
-  {
-    "category": "Biopharmaceutical",
-    "name": "Novartis",
-    "why": "Global pharma leader integrating AI in clinical research."
-  },
-  {
-    "category": "Biopharmaceutical",
-    "name": "AstraZeneca",
-    "why": "Develops biologics and AI-assisted vaccine platforms."
-  },
-  {
-    "category": "Genomics Research",
-    "name": "Broad Institute",
-    "why": "Leading genomics and biomedical data research institute."
-  },
-  {
-    "category": "Genomics Research",
-    "name": "Wellcome Sanger Institute",
-    "why": "Pioneered large-scale genome sequencing initiatives."
-  },
-  {
-    "category": "Genomics Research",
-    "name": "J. Craig Venter Institute",
-    "why": "Known for synthetic genomics and human genome sequencing."
-  },
-  {
-    "category": "Biotech Startup",
-    "name": "Insitro",
-    "why": "Integrates machine learning and biology for drug discovery."
-  },
-  {
-    "category": "Biotech Startup",
-    "name": "Arzeda",
-    "why": "Computational protein design company using AI and biochemistry."
-  },
-  {
-    "category": "Biotech Startup",
-    "name": "Ginkgo Bioworks",
-    "why": "Specializes in synthetic biology and cell programming."
-  },
-  {
-    "category": "Healthcare AI",
+    "category": "Artificial Intelligence in Biotech",
     "name": "Recursion Pharmaceuticals",
-    "why": "Uses AI and automation for large-scale drug discovery."
+    "why": "Applies AI and automation for phenomics and drug discovery."
   },
   {
-    "category": "Healthcare AI",
-    "name": "Tempus",
-    "why": "Applies AI to precision medicine and clinical data analytics."
+    "category": "Artificial Intelligence in Biotech",
+    "name": "Schrödinger Inc.",
+    "why": "Uses physics-based AI for molecular modeling."
   },
   {
-    "category": "Healthcare AI",
-    "name": "PathAI",
-    "why": "AI diagnostics company focusing on pathology and disease detection."
+    "category": "Artificial Intelligence in Biotech",
+    "name": "Atomwise",
+    "why": "Uses AI for small-molecule drug design."
+  },
+  {
+    "category": "Artificial Intelligence in Biotech",
+    "name": "Valo Health",
+    "why": "Integrates AI and human data for predictive drug discovery."
+  },
+  {
+    "category": "Artificial Intelligence in Biotech",
+    "name": "Owkin",
+    "why": "Applies federated AI learning to biomedical research."
+  },
+  {
+    "category": "Artificial Intelligence in Biotech",
+    "name": "BioAge Labs",
+    "why": "Uses AI to identify aging-related drug targets."
+  },
+  {
+    "category": "Artificial Intelligence in Biotech",
+    "name": "Exscientia",
+    "why": "Pioneers AI-designed drugs entering clinical trials."
   }
 ]
