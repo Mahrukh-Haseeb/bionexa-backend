@@ -1,9 +1,9 @@
-# Byte-compiled / optimized / DLL files
+
 __pycache__/
 *.py[cod]
 *$py.class
 
-# ... other sections
+
 
 # Virtual Environment
 venv/
@@ -11,8 +11,7 @@ venv/
 env/
 .env/
 .vscode
-# ... other sections
-# Dependency files (Optional - only if you install packages outside of venv)
+
 *.egg
 *.whl
 .installed.cfg
@@ -21,10 +20,10 @@ lib/
 lib64/
 share/
 
-# Secrets and Logs (Crucial for a safe deployment)
+
 .env
 *.log
 
-# Windows specific
+
 thumbs.db
 ehthumbs.db
